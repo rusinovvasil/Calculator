@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator with Result List</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://img.freepik.com/free-photo/reflection-sunset-sky_53876-146873.jpg?w=1480&t=st=1706448832~exp=1706449432~hmac=02ad52c25f0eb1c63b250171237bcc782aeaa3cee3557673c8be7b0607ae41b6"
+        alt=""
+        class="background-image"
+      />
+      <div class="calculator">
+        <input type="text" id="display" readonly />
+        <br />
+        <input type="button" value="7" onclick="appendToDisplay('7')" />
+        <input type="button" value="8" onclick="appendToDisplay('8')" />
+        <input type="button" value="9" onclick="appendToDisplay('9')" />
+        <input type="button" value="/" onclick="appendToDisplay('/')" />
+        <br />
+        <input type="button" value="4" onclick="appendToDisplay('4')" />
+        <input type="button" value="5" onclick="appendToDisplay('5')" />
+        <input type="button" value="6" onclick="appendToDisplay('6')" />
+        <input type="button" value="-" onclick="appendToDisplay('-')" />
+        <br />
+        <input type="button" value="1" onclick="appendToDisplay('1')" />
+        <input type="button" value="2" onclick="appendToDisplay('2')" />
+        <input type="button" value="3" onclick="appendToDisplay('3')" />
+        <input type="button" value="+" onclick="appendToDisplay('+')" />
+        <br />
+        <input type="button" value="0" onclick="appendToDisplay('0')" />
+        <input type="button" value="." onclick="appendToDisplay('.')" />
+        <input type="button" value="C" onclick="clearDisplay()" />
+        <input type="button" value="=" onclick="calculate()" />
+      </div>
+      <div>
+        <button class="clear-list" id="clear-list">🗑️</button>
+      </div>
+      <div class="list" id="results-list"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
